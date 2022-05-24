@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import "_common";
+
+
+
+@media (max-width:767px) {
+    $wid : 100%;
+    .work {
+        text-align: center;
+        background-color: #eee;
+        
+        padding: 150px 0;
+        > h2 {}
+        > p {}
+        > ul {
+            width: $wid;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            li {
+                width: 48%;
+                margin-bottom: 3.5%;
+                > figure { 
+                    img {width: 100%;}
+                    > figcaption {
+                        background-color: $c-white;
+                        padding: 7px 0;
+                        > b {}
+                        > p {}
+                    }      
+                }
+            }
+        }
+        
+        
+    }
+    
+}
+
+
+@media (min-width:768px) {
+    .work {
+        text-align: center;
+        background-color: #eee;
+        
+        padding: 150px 0;
+        > h2 {}
+        > p {}
+        > ul {
+            width: 1300px;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            li {
+                width: 31%;
+                margin-bottom: 3.5%;
+                    > figure { 
+                        img {width: 100%;}
+                    > figcaption {
+                        background-color: $c-white;
+                        padding: 7px 0;
+                        > b {}
+                        > p {}
+                    }      
+                }
+            }
+        }
+    
+        
+    }
+    
+}
